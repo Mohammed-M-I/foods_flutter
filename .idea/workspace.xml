@@ -8,8 +8,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8973da9c-8cb7-4d42-846c-b060e97643d9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/img_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/data/data_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/data/remote_data_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/error/exceptions.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/error/export_error.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/error/failures.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/extensions/colors_extensions.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/extensions/strings_extensions.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/network/api_provider.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/network_response/network_response.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/storage/app_storage.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/themes/app_themes.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/translations/app_translations.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/translations/from/ar_sa_translations.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/translations/from/en_us_translations.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/use_case/use_case.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/utils/app_alert_utils.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/utils/app_image_utils.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/utils/app_network_utils.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/values/app_colors.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/values/app_dimensions.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/values/app_strings.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/values/constants/app_arguments_keys.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/values/constants/app_assets.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/values/constants/app_constants.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/values/constants/app_enums.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/values/constants/app_urls.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/values/export/export_values.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/global_widgets/app_button_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/global_widgets/app_image_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/global_widgets/app_no_data_found_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/global_widgets/app_overlay_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/global_widgets/app_progress_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/global_widgets/app_tab_bar_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/global_widgets/app_text_field_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/global_widgets/export/export_global_widgets.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/routes/app_pages.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/routes/app_routes.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foods_rouni.iml" beforeDir="false" afterPath="$PROJECT_DIR$/foods_rouni.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/GeneratedPluginRegistrant.m" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/GeneratedPluginRegistrant.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,10 +66,30 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="feature/core" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2UX1gvnwId0koWu2iByFWrFlCCX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -32,8 +101,16 @@
     <property name="android.sdk.path" value="G:/MyStuff/android-sdk/android-sdk" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/app" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Andoid Courses Projects Sy\Rouni\foods-rouni\lib\app" />
+      <recent name="D:\Andoid Courses Projects Sy\Rouni\foods-rouni" />
+      <recent name="D:\Andoid Courses Projects Sy\Rouni\foods-rouni\lib" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
