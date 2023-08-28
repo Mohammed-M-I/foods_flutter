@@ -4,6 +4,7 @@ import '../../../core/values/app_dimensions.dart';
 import '../../../core/values/constants/app_assets.dart';
 import 'package:get/get.dart';
 
+import '../../../global_widgets/app_progress_widget.dart';
 import 'splash_controller.dart';
 
 class SplashPage extends GetView<SplashController> {
@@ -35,9 +36,7 @@ class SplashPage extends GetView<SplashController> {
             padding: EdgeInsets.only(
               bottom: AppDimensions.paddingOrMargin40,
             ),
-            child: CircularProgressIndicator(
-              color: AppColors.primary,
-            ),
+            child: AppProgressWidget(),
           )
         ],
       ),

@@ -1,8 +1,8 @@
+import 'package:get/get.dart';
+
 import '../../../core/storage/app_storage.dart';
 import '../../../core/values/export/export_values.dart';
 import '../../../features/splash/presentation/ui/splash_ui_event.dart';
-import 'package:get/get.dart';
-
 import '../../../routes/app_pages.dart';
 import 'ui/splash_ui_state.dart';
 
@@ -68,6 +68,8 @@ class SplashController extends GetxController {
       _delayTimeout(
         event: event,
       );
+
+      return;
     }
   }
 
