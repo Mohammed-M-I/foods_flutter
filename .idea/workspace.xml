@@ -8,12 +8,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8973da9c-8cb7-4d42-846c-b060e97643d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/app/features/splash/presentation/splash_binding.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/splash/presentation/splash_controller.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/splash/presentation/splash_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/splash/presentation/ui/splash_ui_event.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/splash/presentation/ui/splash_ui_state.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/features/splash/presentation/splash_binding.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/features/splash/presentation/splash_binding.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/features/splash/presentation/splash_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/features/splash/presentation/splash_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/features/splash/presentation/splash_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/features/splash/presentation/splash_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/global_widgets/app_progress_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/global_widgets/app_progress_widget.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

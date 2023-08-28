@@ -9,7 +9,7 @@ class AppProgressWidget extends StatelessWidget {
   const AppProgressWidget({
     Key? key,
     this.padding = const EdgeInsets.all(
-      AppDimensions.paddingOrMargin16,
+      AppDimensions.zero,
     ),
   }) : super(key: key);
 
