@@ -8,17 +8,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8973da9c-8cb7-4d42-846c-b060e97643d9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/utils/app_log_utils.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app/features/splash/presentation/splash_binding.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/features/splash/presentation/splash_binding.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app/features/splash/presentation/splash_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/features/splash/presentation/splash_controller.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app/features/splash/presentation/splash_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/features/splash/presentation/splash_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app/global_widgets/app_progress_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/global_widgets/app_progress_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/core/extensions/strings_extensions.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/core/extensions/strings_extensions.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/core/network/api_provider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/core/network/api_provider.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/core/storage/app_storage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/core/storage/app_storage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/core/values/constants/app_constants.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/core/values/constants/app_constants.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -28,10 +35,19 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="GithubProjectSettings">
     <option name="branchProtectionPatterns">
       <list>
         <option value="master" />
+        <option value="develop" />
       </list>
     </option>
   </component>
@@ -81,11 +97,19 @@
       <option name="project" value="LOCAL" />
       <updated>1693071783566</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="01- Code refactoring.">
+      <created>1693247267233</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693247267233</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="01- Init project." />
-    <option name="LAST_COMMIT_MESSAGE" value="01- Init project." />
+    <MESSAGE value="01- Code refactoring." />
+    <option name="LAST_COMMIT_MESSAGE" value="01- Code refactoring." />
   </component>
 </project>

@@ -1,19 +1,25 @@
 import 'dart:io';
 
-import 'package:dio/dio.dart';
-import '../values/constants/app_urls.dart';
+import 'package:dio/dio.dart' as dio;
+import 'package:foods_rouni/app/core/extensions/strings_extensions.dart';
+import 'package:get/get.dart';
 
+import '../utils/app_log_utils.dart';
 import '../values/app_strings.dart';
 import '../values/constants/app_constants.dart';
+import '../values/constants/app_urls.dart';
 
 class ApiProvider {
-  static final Dio _dio = Dio(
-    BaseOptions(
+  static final _dio = dio.Dio(
+    dio.BaseOptions(
       followRedirects: false,
       validateStatus: (int? status) {
         return true;
       },
       baseUrl: AppUrls.baseUrl,
+      sendTimeout: const Duration(
+        seconds: 60,
+      ),
       receiveTimeout: const Duration(
         seconds: 60,
       ),
@@ -33,20 +39,16 @@ class ApiProvider {
     Function(int sent, int total)? onSendProgress,
     Function(int sent, int total)? onReceiveProgress,
   }) async {
-    if (token.isEmpty) {
-      _dio.options.headers['Authorization'] = '';
-    } else {
-      _dio.options.headers['Authorization'] = 'Bearer $token';
-    }
+    _dio.options.headers['Authorization'] = token.isEmpty ? '' : token.toBearer;
 
-    _dio.options.responseType = ResponseType.json;
+    _dio.options.responseType = dio.ResponseType.json;
 
     try {
-      // LogUtils.infoLog(
-      //   message: url,
-      // );
+      AppLogUtils.logInfo(
+        message: url,
+      );
 
-      Response response = await _dio.post(
+      final response = await _dio.post(
         url,
         data: data,
         queryParameters: queryParameters,
@@ -54,23 +56,18 @@ class ApiProvider {
         onReceiveProgress: onReceiveProgress,
       );
 
-      // LogUtils.infoLog(
-      //   message: 'response.statusCode: ${response.statusCode}',
-      // );
+      AppLogUtils.logInfo(
+        message: 'response.statusCode: ${response.statusCode}',
+      );
 
-      // LogUtils.infoLog(
-      //   message: 'response: $response',
-      // );
+      AppLogUtils.logInfo(
+        message: 'response: $response',
+      );
 
       if (response.statusCode == StatusCodeEnum.success.code) {
         onSuccess(
           response.data,
         );
-
-        // LogUtils.traceLog(
-        //   variableName: 'onSuccess',
-        //   variable: onSuccess,
-        // );
       } else {
         _processNot200StatusCode(
           response: response,
@@ -95,20 +92,16 @@ class ApiProvider {
     Function(int sent, int total)? onSendProgress,
     Function(int sent, int total)? onReceiveProgress,
   }) async {
-    if (token.isEmpty) {
-      _dio.options.headers['Authorization'] = '';
-    } else {
-      _dio.options.headers['Authorization'] = 'Bearer $token';
-    }
+    _dio.options.headers['Authorization'] = token.isEmpty ? '' : token.toBearer;
 
-    _dio.options.responseType = ResponseType.json;
+    _dio.options.responseType = dio.ResponseType.json;
 
     try {
-      // LogUtils.infoLog(
-      //  message: url,
-      // );
+      AppLogUtils.logInfo(
+        message: url,
+      );
 
-      Response response = await _dio.post(
+      final response = await _dio.post(
         url,
         data: data,
         queryParameters: queryParameters,
@@ -116,23 +109,18 @@ class ApiProvider {
         onReceiveProgress: onReceiveProgress,
       );
 
-      // LogUtils.infoLog(
-      //   message: 'response.statusCode: ${response.statusCode}',
-      // );
+      AppLogUtils.logInfo(
+        message: 'response.statusCode: ${response.statusCode}',
+      );
 
-      // LogUtils.infoLog(
-      //   message: 'response: $response',
-      // );
+      AppLogUtils.logInfo(
+        message: 'response: $response',
+      );
 
       if (response.statusCode == StatusCodeEnum.success.code) {
         onSuccess(
           response.data,
         );
-
-        // LogUtils.traceLog(
-        //   variableName: 'onSuccess',
-        //   variable: onSuccess,
-        // );
       } else {
         _processNot200StatusCode(
           response: response,
@@ -154,47 +142,34 @@ class ApiProvider {
     Map<String, dynamic> queryParameters = const {},
     required Function(dynamic data) onSuccess,
     required Function(String errorMessage) onError,
-    Function(int sent, int total)? onSendProgress,
-    Function(int sent, int total)? onReceiveProgress,
   }) async {
-    if (token.isEmpty) {
-      _dio.options.headers['Authorization'] = '';
-    } else {
-      _dio.options.headers['Authorization'] = 'Bearer $token';
-    }
+    _dio.options.headers['Authorization'] = token.isEmpty ? '' : token.toBearer;
 
-    _dio.options.responseType = ResponseType.json;
+    _dio.options.responseType = dio.ResponseType.json;
 
     try {
-      // LogUtils.infoLog(
-      //   message: url,
-      // );
+      AppLogUtils.logInfo(
+        message: url,
+      );
 
-      Response response = await _dio.post(
+      final response = await _dio.delete(
         url,
         data: data,
         queryParameters: queryParameters,
-        onSendProgress: onSendProgress,
-        onReceiveProgress: onReceiveProgress,
       );
 
-      // LogUtils.infoLog(
-      //   message: 'response.statusCode: ${response.statusCode}',
-      // );
+      AppLogUtils.logInfo(
+        message: 'response.statusCode: ${response.statusCode}',
+      );
 
-      // LogUtils.infoLog(
-      //   message: 'response: $response',
-      // );
+      AppLogUtils.logInfo(
+        message: 'response: $response',
+      );
 
       if (response.statusCode == StatusCodeEnum.success.code) {
         onSuccess(
           response.data,
         );
-
-        // LogUtils.traceLog(
-        //   variableName: 'onSuccess',
-        //   variable: onSuccess,
-        // );
       } else {
         _processNot200StatusCode(
           response: response,
@@ -219,20 +194,16 @@ class ApiProvider {
     Function(int sent, int total)? onSendProgress,
     Function(int sent, int total)? onReceiveProgress,
   }) async {
-    if (token.isEmpty) {
-      _dio.options.headers['Authorization'] = '';
-    } else {
-      _dio.options.headers['Authorization'] = 'Bearer $token';
-    }
+    _dio.options.headers['Authorization'] = token.isEmpty ? '' : token.toBearer;
 
-    _dio.options.responseType = ResponseType.json;
+    _dio.options.responseType = dio.ResponseType.json;
 
     try {
-      // LogUtils.infoLog(
-      //   message: url,
-      // );
+      AppLogUtils.logInfo(
+        message: url,
+      );
 
-      Response response = await _dio.put(
+      final response = await _dio.put(
         url,
         data: data,
         queryParameters: queryParameters,
@@ -240,24 +211,18 @@ class ApiProvider {
         onReceiveProgress: onReceiveProgress,
       );
 
-      // LogUtils.infoLog(
-      //   message: 'response.statusCode: ${response.statusCode}',
-      // );
+      AppLogUtils.logInfo(
+        message: 'response.statusCode: ${response.statusCode}',
+      );
 
-      // LogUtils.infoLog(
-      //   message: 'response: $response',
-      // );
+      AppLogUtils.logInfo(
+        message: 'response: $response',
+      );
 
       if (response.statusCode == StatusCodeEnum.success.code) {
         onSuccess(
           response.data,
         );
-
-        // LogUtils.traceLog(
-        //   variableName: 'onSuccess',
-        //   variable: onSuccess,
-        // );
-
       } else {
         _processNot200StatusCode(
           response: response,
@@ -281,43 +246,34 @@ class ApiProvider {
     required Function(String errorMessage) onError,
     Function(int sent, int total)? onReceiveProgress,
   }) async {
-    if (token.isEmpty) {
-      _dio.options.headers['Authorization'] = '';
-    } else {
-      _dio.options.headers['Authorization'] = 'Bearer $token';
-    }
+    _dio.options.headers['Authorization'] = token.isEmpty ? '' : token.toBearer;
 
-    _dio.options.responseType = ResponseType.json;
+    _dio.options.responseType = dio.ResponseType.json;
 
     try {
-      // LogUtils.infoLog(
-      //   message: url,
-      // );
+      AppLogUtils.logInfo(
+        message: url,
+      );
 
-      Response response = await _dio.get(
+      final response = await _dio.get(
         url,
         data: data,
         queryParameters: queryParameters,
         onReceiveProgress: onReceiveProgress,
       );
 
-      // LogUtils.infoLog(
-      //   message: 'response.statusCode: ${response.statusCode}',
-      // );
+      AppLogUtils.logInfo(
+        message: 'response.statusCode: ${response.statusCode}',
+      );
 
-      // LogUtils.infoLog(
-      //   message: 'response: $response',
-      // );
+      AppLogUtils.logInfo(
+        message: 'response: $response',
+      );
 
       if (response.statusCode == StatusCodeEnum.success.code) {
         onSuccess(
           response.data,
         );
-
-        // LogUtils.traceLog(
-        //   variableName: 'onSuccess',
-        //   variable: onSuccess,
-        // );
       } else {
         _processNot200StatusCode(
           response: response,
@@ -342,20 +298,16 @@ class ApiProvider {
     required Function(dynamic error) onError,
     Function(int sent, int total)? onReceiveProgress,
   }) async {
-    if (token.isEmpty) {
-      _dio.options.headers['Authorization'] = '';
-    } else {
-      _dio.options.headers['Authorization'] = 'Bearer $token';
-    }
+    _dio.options.headers['Authorization'] = token.isEmpty ? '' : token.toBearer;
 
-    _dio.options.responseType = ResponseType.stream;
+    _dio.options.responseType = dio.ResponseType.stream;
 
     try {
-      // LogUtils.infoLog(
-      //   message: url,
-      // );
+      AppLogUtils.logInfo(
+        message: url,
+      );
 
-      Response response = await _dio.download(
+      final response = await _dio.download(
         url,
         data: data,
         queryParameters: queryParameters,
@@ -363,23 +315,18 @@ class ApiProvider {
         onReceiveProgress: onReceiveProgress,
       );
 
-      // LogUtils.infoLog(
-      //   message: 'response.statusCode: ${response.statusCode}',
-      // );
+      AppLogUtils.logInfo(
+        message: 'response.statusCode: ${response.statusCode}',
+      );
 
-      // LogUtils.infoLog(
-      //   message: 'response: $response',
-      // );
+      AppLogUtils.logInfo(
+        message: 'response: $response',
+      );
 
       if (response.statusCode == StatusCodeEnum.success.code) {
         onSuccess(
           response.data,
         );
-
-        // LogUtils.traceLog(
-        //   variableName: 'onSuccess',
-        //   variable: onSuccess,
-        // );
       } else {
         _processNot200StatusCode(
           response: response,
@@ -404,33 +351,29 @@ class ApiProvider {
     required Function(String errorMessage) onError,
     Function(int sent, int total)? onReceiveProgress,
   }) async {
-    if (token.isEmpty) {
-      _dio.options.headers['Authorization'] = '';
-    } else {
-      _dio.options.headers['Authorization'] = 'Bearer $token';
-    }
+    _dio.options.headers['Authorization'] = token.isEmpty ? '' : token.toBearer;
 
-    _dio.options.responseType = ResponseType.bytes;
+    _dio.options.responseType = dio.ResponseType.bytes;
 
     try {
-      // LogUtils.infoLog(
-      //   message: url,
-      // );
+      AppLogUtils.logInfo(
+        message: url,
+      );
 
-      Response<List<int>> response = await _dio.get<List<int>>(
+      dio.Response<List<int>> response = await _dio.get<List<int>>(
         url,
         data: data,
         queryParameters: queryParameters,
         onReceiveProgress: onReceiveProgress,
       );
 
-      // LogUtils.infoLog(
-      //   message: 'response.statusCode: ${response.statusCode}',
-      // );
+      AppLogUtils.logInfo(
+        message: 'response.statusCode: ${response.statusCode}',
+      );
 
-      // LogUtils.infoLog(
-      //   message: 'response: $response',
-      // );
+      AppLogUtils.logInfo(
+        message: 'response: $response',
+      );
 
       if (response.statusCode == StatusCodeEnum.success.code) {
         final savedFile = await File(
@@ -438,6 +381,7 @@ class ApiProvider {
         ).create(
           recursive: true,
         );
+
         await savedFile.writeAsBytes(
           response.data!,
           mode: FileMode.write,
@@ -447,11 +391,6 @@ class ApiProvider {
         onSuccess(
           response.data,
         );
-
-        // LogUtils.traceLog(
-        //   variableName: 'onSuccess',
-        //   variable: onSuccess,
-        // );
       } else {
         _processNot200StatusCode(
           response: response,
@@ -476,20 +415,16 @@ class ApiProvider {
     Function(int sent, int total)? onSendProgress,
     Function(int sent, int total)? onReceiveProgress,
   }) async {
-    if (token.isEmpty) {
-      _dio.options.headers['Authorization'] = '';
-    } else {
-      _dio.options.headers['Authorization'] = 'Bearer $token';
-    }
+    _dio.options.headers['Authorization'] = token.isEmpty ? '' : token.toBearer;
 
-    _dio.options.responseType = ResponseType.json;
+    _dio.options.responseType = dio.ResponseType.json;
 
     try {
-      // LogUtils.infoLog(
-      //   message: url,
-      // );
+      AppLogUtils.logInfo(
+        message: url,
+      );
 
-      Response response = await _dio.post(
+      final response = await _dio.post(
         url,
         data: data,
         queryParameters: queryParameters,
@@ -497,23 +432,18 @@ class ApiProvider {
         onReceiveProgress: onReceiveProgress,
       );
 
-      // LogUtils.infoLog(
-      //   message: 'response.statusCode: ${response.statusCode}',
-      // );
+      AppLogUtils.logInfo(
+        message: 'response.statusCode: ${response.statusCode}',
+      );
 
-      // LogUtils.infoLog(
-      //   message: 'response: $response',
-      // );
+      AppLogUtils.logInfo(
+        message: 'response: $response',
+      );
 
       if (response.statusCode == StatusCodeEnum.success.code) {
         onSuccess(
           response.data,
         );
-
-        // LogUtils.traceLog(
-        //   variableName: 'onSuccess',
-        //   variable: onSuccess,
-        // );
       } else {
         _processNot200StatusCode(
           response: response,
@@ -531,14 +461,14 @@ class ApiProvider {
 //region Private Functions
 
   static void _processNot200StatusCode({
-    required Response response,
+    required dio.Response response,
     required Function(String errorMessage) onError,
   }) {
     if (response.statusCode != null) {
       onError(
         'Status code: ${response.statusCode} - ${StatusCodeEnum.from(
           code: response.statusCode!,
-        ).message}',
+        ).message.tr}',
       );
     }
   }
@@ -548,22 +478,20 @@ class ApiProvider {
     Function(String errorMessage) onError,
   ) {
     // Send substring of exception message
-    // TODO: Make UI for showing messages scrollable
     final exceptionMessage = exception.toString();
+    final exceptionMessageLength = exceptionMessage.length;
+    const maxLength = AppConstants.maxExceptionMessageLength;
+
     onError(
-      // exception.toString(),
       exceptionMessage.substring(
         0,
-        exceptionMessage.length > AppConstants.maxExceptionMessageLength ? AppConstants.maxExceptionMessageLength : exceptionMessage.length,
+        exceptionMessageLength > maxLength ? maxLength : exceptionMessageLength,
       ),
     );
 
-    // Log complete exception message
-
-    // LogUtils.errorLog(
-    //   message: exception.toString(),
-    //   exception: exception,
-    // );
+    AppLogUtils.logInfo(
+      message: exceptionMessage,
+    );
   }
 
 //endregion Private Functions
