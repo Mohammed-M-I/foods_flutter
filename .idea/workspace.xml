@@ -8,12 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8973da9c-8cb7-4d42-846c-b060e97643d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/app/core/utils/app_log_utils.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app/core/extensions/strings_extensions.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/core/extensions/strings_extensions.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app/core/network/api_provider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/core/network/api_provider.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app/core/storage/app_storage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/core/storage/app_storage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app/core/values/constants/app_constants.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/core/values/constants/app_constants.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/core/error/failures.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/core/error/failures.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,12 +100,20 @@
       <option name="project" value="LOCAL" />
       <updated>1693247267233</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="01- Some code refactoring.&#10;02- Add app-log-utils.">
+      <created>1693678898501</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1693678898501</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="01- Init project." />
     <MESSAGE value="01- Code refactoring." />
-    <option name="LAST_COMMIT_MESSAGE" value="01- Code refactoring." />
+    <MESSAGE value="01- Some code refactoring.&#10;02- Add app-log-utils." />
+    <option name="LAST_COMMIT_MESSAGE" value="01- Some code refactoring.&#10;02- Add app-log-utils." />
   </component>
 </project>
