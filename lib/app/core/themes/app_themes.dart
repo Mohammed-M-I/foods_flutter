@@ -13,14 +13,14 @@ abstract class AppThemes {
 
   //endregion
 
-  static final ThemeData _darkDefault = ThemeData.dark();
-  static final ThemeData _lightDefault = ThemeData.light();
+  static final _darkDefault = ThemeData.dark();
+  static final _lightDefault = ThemeData.light();
 
-  static final ThemeData _darkTheme01 = ThemeData.dark();
-  static final ThemeData _lightTheme01 = ThemeData.light();
+  static final _darkTheme01 = ThemeData.dark();
+  static final _lightTheme01 = ThemeData.light();
 
-  static final ThemeData _darkTheme02 = ThemeData.dark();
-  static final ThemeData _lightTheme02 = ThemeData.light();
+  static final _darkTheme02 = ThemeData.dark();
+  static final _lightTheme02 = ThemeData.light();
 
   static final ThemeData _customTheme = ThemeData(
     primaryColorDark: Colors.orange,

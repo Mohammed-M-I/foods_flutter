@@ -29,15 +29,16 @@ class NetworkConnectivity {
   // TODO: Make this domain related to backend
   static const String _lookupDomain = 'example.com';
 
-  NetworkConnectivity._();
 
   static final _instance = NetworkConnectivity._();
-
-  static NetworkConnectivity get instance => _instance;
   final _networkConnectivity = Connectivity();
   final _controller = StreamController.broadcast();
 
+  static NetworkConnectivity get instance => _instance;
   Stream get myStream => _controller.stream;
+
+  // Private to achieve singleton
+  NetworkConnectivity._();
 
   void initialise() async {
     ConnectivityResult result = await _networkConnectivity.checkConnectivity();
