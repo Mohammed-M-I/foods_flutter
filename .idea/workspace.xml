@@ -8,7 +8,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8973da9c-8cb7-4d42-846c-b060e97643d9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/lib/app/core/use_case/use_case.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/core/use_case/use_case.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/extensions/locales_extensions.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/values/constants/app_keys.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/data/datasources/auth_local_datasource.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/data/datasources/auth_remote_datasource.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/data/models/remote/request/login_request_dto.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/data/models/remote/response/login_response_dto.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/domain/entities/login_data.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/login/ui/login_ui_event.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/login/ui/login_ui_state.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/core/network/api_provider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/core/network/api_provider.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/core/values/constants/app_constants.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/core/values/constants/app_constants.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/core/values/export/export_values.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/core/values/export/export_values.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/features/splash/presentation/splash_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/features/splash/presentation/splash_controller.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,15 +74,20 @@
     <property name="android.sdk.path" value="G:/MyStuff/android-sdk/android-sdk" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/app/features" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/app/core/values/constants" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Andoid Courses Projects Sy\Rouni\foods-rouni\lib\app\features" />
+      <recent name="D:\Andoid Courses Projects Sy\Rouni\foods-rouni\lib\app\core\values\constants" />
+      <recent name="D:\Andoid Courses Projects Sy\Rouni\foods-rouni\lib\app\core\extensions" />
+      <recent name="D:\Andoid Courses Projects Sy\Rouni\foods-rouni\lib\app\features\auth\data\datasources" />
+      <recent name="D:\Andoid Courses Projects Sy\Rouni\foods-rouni\lib\app\features\auth\domain\entities" />
+      <recent name="D:\Andoid Courses Projects Sy\Rouni\foods-rouni\lib\app\features\auth\data\models\remote\response" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Andoid Courses Projects Sy\Rouni\foods-rouni\lib\app\features\auth\presentation\login" />
       <recent name="D:\Andoid Courses Projects Sy\Rouni\foods-rouni\lib\app\core\network\utils" />
       <recent name="D:\Andoid Courses Projects Sy\Rouni\foods-rouni\lib\app\core\network\models" />
       <recent name="D:\Andoid Courses Projects Sy\Rouni\foods-rouni\lib\app\core\network" />
@@ -125,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693848630640</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="01- Some code refactoring.">
+      <created>1693848849707</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693848849707</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

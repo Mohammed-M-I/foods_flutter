@@ -53,6 +53,12 @@ class SplashController extends GetxController {
   }
 
   @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+  }
+
+  @override
   InternalFinalCallback<void> get onDelete {
     return super.onDelete;
   }
@@ -92,15 +98,9 @@ class SplashController extends GetxController {
           false,
         );
 
-        if (isLoggedIn) {
-          Get.offNamed(
-            AppRoutes.main,
-          );
-        } else {
-          Get.offNamed(
-            AppRoutes.login,
-          );
-        }
+        Get.offNamed(
+          isLoggedIn ? AppRoutes.main : AppRoutes.login,
+        );
       },
     );
   }

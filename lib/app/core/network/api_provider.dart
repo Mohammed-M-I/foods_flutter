@@ -1,7 +1,10 @@
 import 'dart:io';
 
 import 'package:dio/dio.dart' as dio;
+import 'package:foods_rouni/app/core/extensions/locales_extensions.dart';
 import 'package:foods_rouni/app/core/extensions/strings_extensions.dart';
+import 'package:foods_rouni/app/core/translations/app_translations.dart';
+import 'package:foods_rouni/app/core/values/export/export_values.dart';
 import 'package:get/get.dart';
 
 import '../utils/app_log_utils.dart';
@@ -39,13 +42,20 @@ class ApiProvider {
     Function(int sent, int total)? onSendProgress,
     Function(int sent, int total)? onReceiveProgress,
   }) async {
-    _dio.options.headers['Authorization'] = token.isEmpty ? '' : token.toBearer;
+    _dio.options.headers['Authorization'] = token.isEmpty ? AppConstants.emptyString : token.toBearer;
 
     _dio.options.responseType = dio.ResponseType.json;
 
     try {
       AppLogUtils.logInfo(
         message: url,
+      );
+
+      // To add culture for request
+      queryParameters.addAll(
+        {
+          AppKeys.culture: AppTranslations.getAppLocale().toServerCulture,
+        },
       );
 
       final response = await _dio.post(
@@ -92,13 +102,20 @@ class ApiProvider {
     Function(int sent, int total)? onSendProgress,
     Function(int sent, int total)? onReceiveProgress,
   }) async {
-    _dio.options.headers['Authorization'] = token.isEmpty ? '' : token.toBearer;
+    _dio.options.headers['Authorization'] = token.isEmpty ? AppConstants.emptyString : token.toBearer;
 
     _dio.options.responseType = dio.ResponseType.json;
 
     try {
       AppLogUtils.logInfo(
         message: url,
+      );
+
+      // To add culture for request
+      queryParameters.addAll(
+        {
+          AppKeys.culture: AppTranslations.getAppLocale().toServerCulture,
+        },
       );
 
       final response = await _dio.post(
@@ -143,13 +160,20 @@ class ApiProvider {
     required Function(dynamic data) onSuccess,
     required Function(String errorMessage) onError,
   }) async {
-    _dio.options.headers['Authorization'] = token.isEmpty ? '' : token.toBearer;
+    _dio.options.headers['Authorization'] = token.isEmpty ? AppConstants.emptyString : token.toBearer;
 
     _dio.options.responseType = dio.ResponseType.json;
 
     try {
       AppLogUtils.logInfo(
         message: url,
+      );
+
+      // To add culture for request
+      queryParameters.addAll(
+        {
+          AppKeys.culture: AppTranslations.getAppLocale().toServerCulture,
+        },
       );
 
       final response = await _dio.delete(
@@ -194,13 +218,20 @@ class ApiProvider {
     Function(int sent, int total)? onSendProgress,
     Function(int sent, int total)? onReceiveProgress,
   }) async {
-    _dio.options.headers['Authorization'] = token.isEmpty ? '' : token.toBearer;
+    _dio.options.headers['Authorization'] = token.isEmpty ? AppConstants.emptyString : token.toBearer;
 
     _dio.options.responseType = dio.ResponseType.json;
 
     try {
       AppLogUtils.logInfo(
         message: url,
+      );
+
+      // To add culture for request
+      queryParameters.addAll(
+        {
+          AppKeys.culture: AppTranslations.getAppLocale().toServerCulture,
+        },
       );
 
       final response = await _dio.put(
@@ -246,9 +277,16 @@ class ApiProvider {
     required Function(String errorMessage) onError,
     Function(int sent, int total)? onReceiveProgress,
   }) async {
-    _dio.options.headers['Authorization'] = token.isEmpty ? '' : token.toBearer;
+    _dio.options.headers['Authorization'] = token.isEmpty ? AppConstants.emptyString : token.toBearer;
 
     _dio.options.responseType = dio.ResponseType.json;
+
+    // To add culture for request
+    queryParameters.addAll(
+      {
+        AppKeys.culture: AppTranslations.getAppLocale().toServerCulture,
+      },
+    );
 
     try {
       AppLogUtils.logInfo(
@@ -298,13 +336,20 @@ class ApiProvider {
     required Function(dynamic error) onError,
     Function(int sent, int total)? onReceiveProgress,
   }) async {
-    _dio.options.headers['Authorization'] = token.isEmpty ? '' : token.toBearer;
+    _dio.options.headers['Authorization'] = token.isEmpty ? AppConstants.emptyString : token.toBearer;
 
     _dio.options.responseType = dio.ResponseType.stream;
 
     try {
       AppLogUtils.logInfo(
         message: url,
+      );
+
+      // To add culture for request
+      queryParameters.addAll(
+        {
+          AppKeys.culture: AppTranslations.getAppLocale().toServerCulture,
+        },
       );
 
       final response = await _dio.download(
@@ -351,13 +396,20 @@ class ApiProvider {
     required Function(String errorMessage) onError,
     Function(int sent, int total)? onReceiveProgress,
   }) async {
-    _dio.options.headers['Authorization'] = token.isEmpty ? '' : token.toBearer;
+    _dio.options.headers['Authorization'] = token.isEmpty ? AppConstants.emptyString : token.toBearer;
 
     _dio.options.responseType = dio.ResponseType.bytes;
 
     try {
       AppLogUtils.logInfo(
         message: url,
+      );
+
+      // To add culture for request
+      queryParameters.addAll(
+        {
+          AppKeys.culture: AppTranslations.getAppLocale().toServerCulture,
+        },
       );
 
       dio.Response<List<int>> response = await _dio.get<List<int>>(
@@ -415,13 +467,20 @@ class ApiProvider {
     Function(int sent, int total)? onSendProgress,
     Function(int sent, int total)? onReceiveProgress,
   }) async {
-    _dio.options.headers['Authorization'] = token.isEmpty ? '' : token.toBearer;
+    _dio.options.headers['Authorization'] = token.isEmpty ? AppConstants.emptyString : token.toBearer;
 
     _dio.options.responseType = dio.ResponseType.json;
 
     try {
       AppLogUtils.logInfo(
         message: url,
+      );
+
+      // To add culture for request
+      queryParameters.addAll(
+        {
+          AppKeys.culture: AppTranslations.getAppLocale().toServerCulture,
+        },
       );
 
       final response = await _dio.post(
