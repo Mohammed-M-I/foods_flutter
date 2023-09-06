@@ -8,20 +8,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8973da9c-8cb7-4d42-846c-b060e97643d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/app/core/extensions/locales_extensions.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/core/values/constants/app_keys.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/data/datasources/auth_local_datasource.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/data/datasources/auth_remote_datasource.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/data/models/remote/request/login_request_dto.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/data/models/remote/response/login_response_dto.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/domain/entities/login_data.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/login/ui/login_ui_event.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/login/ui/login_ui_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/data/models/remote/request/register_request_dto.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/data/repositories/auth_repository_impl.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/domain/repositories/auth_repository.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/domain/use_cases/login_use_case.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/domain/use_cases/register_use_case.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/login/login_binding.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/login/login_controller.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/login/login_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/login/widgets/views/login_fields_view.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/login/widgets/views/login_logo_view.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/login/widgets/views/login_submit_view.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app/core/network/api_provider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/core/network/api_provider.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app/core/values/constants/app_constants.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/core/values/constants/app_constants.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app/core/values/export/export_values.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/core/values/export/export_values.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app/features/splash/presentation/splash_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/features/splash/presentation/splash_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/features/auth/data/datasources/auth_remote_datasource.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/features/auth/data/datasources/auth_remote_datasource.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +58,9 @@
       </list>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2UX1gvnwId0koWu2iByFWrFlCCX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -67,24 +69,19 @@
     <option name="autoscrollFromSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
-    <property name="android.sdk.path" value="G:/MyStuff/android-sdk/android-sdk" />
-    <property name="cidr.known.project.marker" value="true" />
-    <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/app/core/values/constants" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
-    <property name="show.migrate.to.gradle.popup" value="false" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "D:/Rouni/foods_rouni/lib/app/features/auth/presentation/login"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Andoid Courses Projects Sy\Rouni\foods-rouni\lib\app\core\values\constants" />
-      <recent name="D:\Andoid Courses Projects Sy\Rouni\foods-rouni\lib\app\core\extensions" />
-      <recent name="D:\Andoid Courses Projects Sy\Rouni\foods-rouni\lib\app\features\auth\data\datasources" />
-      <recent name="D:\Andoid Courses Projects Sy\Rouni\foods-rouni\lib\app\features\auth\domain\entities" />
-      <recent name="D:\Andoid Courses Projects Sy\Rouni\foods-rouni\lib\app\features\auth\data\models\remote\response" />
+      <recent name="D:\Rouni\foods_rouni\lib\app\features\auth\presentation\login" />
+      <recent name="D:\Rouni\foods_rouni\lib\app\features\auth\domain\use_cases" />
+      <recent name="D:\Rouni\foods_rouni\lib\app\features\auth\data\repositories" />
+      <recent name="D:\Rouni\foods_rouni\lib\app\features\auth\domain\repositories" />
+      <recent name="D:\Rouni\foods_rouni\lib\app\features\auth\domain" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Andoid Courses Projects Sy\Rouni\foods-rouni\lib\app\features\auth\presentation\login" />
