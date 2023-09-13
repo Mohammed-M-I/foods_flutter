@@ -1,7 +1,7 @@
 import 'package:get_storage/get_storage.dart';
 
 abstract class AppStorage {
-  static final  _getStorage = GetStorage();
+  static final _getStorage = GetStorage();
 
   //region Keys
 
@@ -24,5 +24,5 @@ abstract class AppStorage {
 
   static Future<void> removeAll() => _getStorage.erase();
 
-  //endregion
+//endregion
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'app/core/utils/app_network_utils.dart';
+import 'app/core/network/utils/app_network_utils.dart';
 import 'package:get_storage/get_storage.dart';
 
 import 'app.dart';

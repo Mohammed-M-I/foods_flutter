@@ -1,13 +1,14 @@
 import 'package:equatable/equatable.dart';
-import '../values/app_strings.dart';
 import 'package:get/get.dart';
 
+import '../values/app_strings.dart';
+
 abstract class Failure extends Equatable {
-  final String message; // Must be translated
+  final String message;
   final List<Object?> properties;
 
   const Failure({
-    this.message = AppStrings.failure,
+    this.message = AppStrings.failure, // Must be translated
     this.properties = const [],
   });
 

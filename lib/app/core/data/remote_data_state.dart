@@ -1,5 +1,5 @@
 
-import '../network_response/network_response.dart';
+import '../network/models/network_response.dart';
 
 import '../error/failures.dart';
 

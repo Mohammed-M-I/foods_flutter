@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import '../values/constants/app_constants.dart';
+import '../../values/constants/app_constants.dart';
 
 class NetworkResponse<T> {
   final bool succeeded;
