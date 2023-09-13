@@ -20,6 +20,7 @@ class RegisterSubmitView extends GetView<RegisterController> {
               stepWidth: double.infinity,
               child: AppButtonWidget(
                 text: AppStrings.register.tr,
+                fontSize: AppDimensions.fontSize12,
                 onPressed: () {
                   controller.on(
                     event: RegisterUiEvent.register(

@@ -19,23 +19,27 @@ class RegisterPage extends GetView<RegisterController> {
         padding: const EdgeInsets.all(
           AppDimensions.paddingOrMargin16,
         ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
-            // Header
-            RegisterLogoView(),
+        child: Center(
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: const [
+                // Header
+                RegisterLogoView(),
 
-            // Fields
-            RegisterFieldsView(),
+                // Fields
+                RegisterFieldsView(),
 
-            // Space
-            SizedBox(
-              height: AppDimensions.paddingOrMargin16,
+                // Space
+                SizedBox(
+                  height: AppDimensions.paddingOrMargin16,
+                ),
+
+                // Submit
+                RegisterSubmitView(),
+              ],
             ),
-
-            // Submit
-            RegisterSubmitView(),
-          ],
+          ),
         ),
       ),
     );
