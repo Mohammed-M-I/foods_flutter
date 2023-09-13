@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foods_rouni/app/core/values/app_dimensions.dart';
 import 'package:get/get.dart';
 
 import '../../../../../../core/values/app_strings.dart';
@@ -20,6 +21,7 @@ class LoginSubmitView extends GetView<LoginController> {
               stepWidth: double.infinity,
               child: AppButtonWidget(
                 text: AppStrings.login.tr,
+                fontSize: AppDimensions.fontSize12,
                 onPressed: () {
                   controller.on(
                     event: LoginUiEvent.login(

@@ -51,17 +51,14 @@ class ApiProvider {
         message: url,
       );
 
-      // To add culture for request
-      queryParameters.addAll(
-        {
-          AppKeys.culture: AppTranslations.getAppLocale().toServerCulture,
-        },
-      );
-
       final response = await _dio.post(
         url,
         data: data,
-        queryParameters: queryParameters,
+        queryParameters: {
+          ...queryParameters,
+          // To add culture for request
+          AppKeys.culture: AppTranslations.getAppLocale().toServerCulture,
+        },
         onSendProgress: onSendProgress,
         onReceiveProgress: onReceiveProgress,
       );
@@ -111,17 +108,14 @@ class ApiProvider {
         message: url,
       );
 
-      // To add culture for request
-      queryParameters.addAll(
-        {
-          AppKeys.culture: AppTranslations.getAppLocale().toServerCulture,
-        },
-      );
-
       final response = await _dio.post(
         url,
         data: data,
-        queryParameters: queryParameters,
+        queryParameters: {
+          ...queryParameters,
+          // To add culture for request
+          AppKeys.culture: AppTranslations.getAppLocale().toServerCulture,
+        },
         onSendProgress: onSendProgress,
         onReceiveProgress: onReceiveProgress,
       );
@@ -169,17 +163,14 @@ class ApiProvider {
         message: url,
       );
 
-      // To add culture for request
-      queryParameters.addAll(
-        {
-          AppKeys.culture: AppTranslations.getAppLocale().toServerCulture,
-        },
-      );
-
       final response = await _dio.delete(
         url,
         data: data,
-        queryParameters: queryParameters,
+        queryParameters: {
+          ...queryParameters,
+          // To add culture for request
+          AppKeys.culture: AppTranslations.getAppLocale().toServerCulture,
+        },
       );
 
       AppLogUtils.logInfo(
@@ -227,17 +218,14 @@ class ApiProvider {
         message: url,
       );
 
-      // To add culture for request
-      queryParameters.addAll(
-        {
-          AppKeys.culture: AppTranslations.getAppLocale().toServerCulture,
-        },
-      );
-
       final response = await _dio.put(
         url,
         data: data,
-        queryParameters: queryParameters,
+        queryParameters: {
+          ...queryParameters,
+          // To add culture for request
+          AppKeys.culture: AppTranslations.getAppLocale().toServerCulture,
+        },
         onSendProgress: onSendProgress,
         onReceiveProgress: onReceiveProgress,
       );
@@ -281,13 +269,6 @@ class ApiProvider {
 
     _dio.options.responseType = dio.ResponseType.json;
 
-    // To add culture for request
-    queryParameters.addAll(
-      {
-        AppKeys.culture: AppTranslations.getAppLocale().toServerCulture,
-      },
-    );
-
     try {
       AppLogUtils.logInfo(
         message: url,
@@ -296,7 +277,11 @@ class ApiProvider {
       final response = await _dio.get(
         url,
         data: data,
-        queryParameters: queryParameters,
+        queryParameters: {
+          ...queryParameters,
+          // To add culture for request
+          AppKeys.culture: AppTranslations.getAppLocale().toServerCulture,
+        },
         onReceiveProgress: onReceiveProgress,
       );
 
@@ -345,17 +330,14 @@ class ApiProvider {
         message: url,
       );
 
-      // To add culture for request
-      queryParameters.addAll(
-        {
-          AppKeys.culture: AppTranslations.getAppLocale().toServerCulture,
-        },
-      );
-
       final response = await _dio.download(
         url,
         data: data,
-        queryParameters: queryParameters,
+        queryParameters: {
+          ...queryParameters,
+          // To add culture for request
+          AppKeys.culture: AppTranslations.getAppLocale().toServerCulture,
+        },
         pathToSave,
         onReceiveProgress: onReceiveProgress,
       );
@@ -405,17 +387,14 @@ class ApiProvider {
         message: url,
       );
 
-      // To add culture for request
-      queryParameters.addAll(
-        {
-          AppKeys.culture: AppTranslations.getAppLocale().toServerCulture,
-        },
-      );
-
       dio.Response<List<int>> response = await _dio.get<List<int>>(
         url,
         data: data,
-        queryParameters: queryParameters,
+        queryParameters: {
+          ...queryParameters,
+          // To add culture for request
+          AppKeys.culture: AppTranslations.getAppLocale().toServerCulture,
+        },
         onReceiveProgress: onReceiveProgress,
       );
 
@@ -476,17 +455,14 @@ class ApiProvider {
         message: url,
       );
 
-      // To add culture for request
-      queryParameters.addAll(
-        {
-          AppKeys.culture: AppTranslations.getAppLocale().toServerCulture,
-        },
-      );
-
       final response = await _dio.post(
         url,
         data: data,
-        queryParameters: queryParameters,
+        queryParameters: {
+          ...queryParameters,
+          // To add culture for request
+          AppKeys.culture: AppTranslations.getAppLocale().toServerCulture,
+        },
         onSendProgress: onSendProgress,
         onReceiveProgress: onReceiveProgress,
       );

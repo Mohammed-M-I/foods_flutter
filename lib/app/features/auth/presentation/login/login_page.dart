@@ -20,45 +20,47 @@ class LoginPage extends GetView<LoginController> {
         padding: const EdgeInsets.all(
           AppDimensions.paddingOrMargin16,
         ),
-        child: SingleChildScrollView(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              // Header
-              const LoginLogoView(),
+        child: Center(
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                // Header
+                const LoginLogoView(),
 
-              // Fields
-              const LoginFieldsView(),
+                // Fields
+                const LoginFieldsView(),
 
-              // Space
-              const SizedBox(
-                height: AppDimensions.paddingOrMargin16,
-              ),
+                // Space
+                const SizedBox(
+                  height: AppDimensions.paddingOrMargin16,
+                ),
 
-              // Submit
-              const LoginSubmitView(),
+                // Submit
+                const LoginSubmitView(),
 
-              // Space
-              const SizedBox(
-                height: AppDimensions.paddingOrMargin40,
-              ),
+                // Space
+                const SizedBox(
+                  height: AppDimensions.paddingOrMargin40,
+                ),
 
-              // To register
-              InkWell(
-                onTap: () {
-                  controller.on(
-                    event: LoginUiEvent.toRegister(),
-                  );
-                },
-                child: Text(
-                  AppStrings.iDoNotHaveAnAccount.tr,
-                  style: const TextStyle(
-                    color: AppColors.black01,
-                    decoration: TextDecoration.underline,
+                // To register
+                InkWell(
+                  onTap: () {
+                    controller.on(
+                      event: LoginUiEvent.toRegister(),
+                    );
+                  },
+                  child: Text(
+                    AppStrings.iDoNotHaveAnAccount.tr,
+                    style: const TextStyle(
+                      color: AppColors.black01,
+                      decoration: TextDecoration.underline,
+                    ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
