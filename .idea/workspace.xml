@@ -8,19 +8,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8973da9c-8cb7-4d42-846c-b060e97643d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/data/models/remote/request/register_request_dto.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/data/repositories/auth_repository_impl.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/domain/repositories/auth_repository.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/domain/use_cases/login_use_case.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/domain/use_cases/register_use_case.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/login/login_binding.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/login/login_controller.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/login/login_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/login/widgets/views/login_fields_view.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/login/widgets/views/login_logo_view.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/login/widgets/views/login_submit_view.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/register/register_controller.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/register/register_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/register/regsiter_binding.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/register/ui/register_ui_event.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/register/ui/regsiter_ui_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/register/widgets/views/regsiter_fields_view.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/register/widgets/views/regsiter_logo_view.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/register/widgets/views/regsiter_submit_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app/features/auth/data/datasources/auth_remote_datasource.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/features/auth/data/datasources/auth_remote_datasource.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,19 +67,24 @@
     <option name="autoscrollFromSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "D:/Rouni/foods_rouni/lib/app/features/auth/presentation/login"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Rouni/foods_rouni/lib/app/features/auth/presentation&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Rouni\foods_rouni\lib\app\features\auth\presentation" />
+      <recent name="D:\Rouni\foods_rouni\lib\app\features\auth" />
       <recent name="D:\Rouni\foods_rouni\lib\app\features\auth\presentation\login" />
       <recent name="D:\Rouni\foods_rouni\lib\app\features\auth\domain\use_cases" />
       <recent name="D:\Rouni\foods_rouni\lib\app\features\auth\data\repositories" />
-      <recent name="D:\Rouni\foods_rouni\lib\app\features\auth\domain\repositories" />
-      <recent name="D:\Rouni\foods_rouni\lib\app\features\auth\domain" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Andoid Courses Projects Sy\Rouni\foods-rouni\lib\app\features\auth\presentation\login" />
@@ -147,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693848849707</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="01- Finish login feature.">
+      <created>1694025227534</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1694025227534</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -155,6 +165,7 @@
     <MESSAGE value="01- Code refactoring." />
     <MESSAGE value="01- Some code refactoring.&#10;02- Add app-log-utils." />
     <MESSAGE value="01- Some code refactoring." />
-    <option name="LAST_COMMIT_MESSAGE" value="01- Some code refactoring." />
+    <MESSAGE value="01- Finish login feature." />
+    <option name="LAST_COMMIT_MESSAGE" value="01- Finish login feature." />
   </component>
 </project>
