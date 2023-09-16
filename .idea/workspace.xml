@@ -7,20 +7,17 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8973da9c-8cb7-4d42-846c-b060e97643d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/register/register_binding.dart" afterDir="false" />
+    <list default="true" id="8973da9c-8cb7-4d42-846c-b060e97643d9" name="Changes" comment="01- Finish login feature.main">
       <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app/core/network/api_provider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/core/network/api_provider.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app/features/auth/presentation/login/login_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/login/login_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app/features/auth/presentation/login/widgets/views/login_submit_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/login/widgets/views/login_submit_view.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app/features/auth/presentation/register/register_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/register/register_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app/features/auth/presentation/register/regsiter_binding.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app/features/auth/presentation/register/widgets/views/regsiter_submit_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/register/widgets/views/regsiter_submit_view.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app/features/splash/presentation/splash_binding.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/features/splash/presentation/splash_binding.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app/routes/app_pages.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/routes/app_pages.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foods_rouni.iml" beforeDir="false" afterPath="$PROJECT_DIR$/foods_rouni.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/GeneratedPluginRegistrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/GeneratedPluginRegistrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/GeneratedPluginRegistrant.m" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/GeneratedPluginRegistrant.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/core/values/constants/app_urls.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/core/values/constants/app_urls.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +34,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/main" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -69,18 +66,15 @@
     <option name="autoscrollFromSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Rouni/foods_rouni/lib/app/features&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Rouni\foods_rouni\lib\app\features" />
