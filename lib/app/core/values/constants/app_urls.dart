@@ -1,5 +1,7 @@
+import 'package:foods_rouni/AppSecrets.dart';
+
 abstract class AppUrls {
-  static const String baseUrl = 'http://104.238.159.155:11111/api';
+  static const String baseUrl = AppSecrets.baseUrl;
 
   //region Accounts
 
