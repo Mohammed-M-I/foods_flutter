@@ -19,7 +19,11 @@ abstract class AppUrls {
     required String search,
     required bool withPaging,
   }) =>
-      '/api/MobStoreCategories/GetFiltered?culture=en-GB&pageSize=$pageSize&pageNumber=$pageNumber&search=$search&withPaging=$withPaging';
+      '/api/MobStoreCategories/GetFiltered?'
+          'pageSize=$pageSize&'
+          'pageNumber=$pageNumber&'
+          'search=$search&'
+          'withPaging=$withPaging';
 
 //endregion Categories
 
@@ -32,7 +36,13 @@ abstract class AppUrls {
     required bool withPaging,
     required int categoryId,
   }) =>
-      '/api/MobStoresProducts/GetFiltered?culture=en-GB&pageSize=$pageSize&pageNumber=$pageNumber&search=$search&withPaging=$withPaging&storeId=0&categoryId=$categoryId';
+      '/api/MobStoresProducts/GetFiltered?'
+          'pageSize=$pageSize&'
+          'pageNumber=$pageNumber&'
+          'search=$search&'
+          'withPaging=$withPaging&'
+          'storeId=0&'
+          'categoryId=$categoryId';
 
 //endregion Products
 }

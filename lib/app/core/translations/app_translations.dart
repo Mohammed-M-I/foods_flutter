@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 
 import '../storage/app_storage.dart';
 import 'from/ar_sa_translations.dart';
-import 'from/en_us_translations.dart';
+import 'from/en_gb_translations.dart';
 
 class AppTranslations extends Translations {
   //region Languages Keys
@@ -14,15 +14,15 @@ class AppTranslations extends Translations {
   static const String arabicLocale = '${arabicLang}_$arabicCountry'; // 'ar_SA'
 
   static const String englishLang = 'en';
-  static const String englishCountry = 'US';
-  static const String englishLocale = '${englishLang}_$englishCountry'; // 'en_US'
+  static const String englishCountry = 'GB';
+  static const String englishLocale = '${englishLang}_$englishCountry'; // 'en_GB'
 
   //endregion
 
   @override
   Map<String, Map<String, String>> get keys => {
     arabicLocale: arSA,
-    englishLocale: enUS,
+    englishLocale: enGB,
   };
 
   static Locale getAppLocale() {

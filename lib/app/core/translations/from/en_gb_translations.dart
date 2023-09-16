@@ -1,7 +1,7 @@
 
 import '../../values/app_strings.dart';
 
-final Map<String, String> enUS = {
+final Map<String, String> enGB = {
   AppStrings.noDataFound: 'No data found',
 
   //region Network validation messages
