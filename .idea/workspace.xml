@@ -8,25 +8,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8973da9c-8cb7-4d42-846c-b060e97643d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/app/features/categories/data/datasources/categories_local_datasource.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/categories/data/datasources/categories_remote_datasource.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/categories/data/models/local/category_entity.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/categories/data/models/remote/category_dto.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/categories/data/repositories/categories_repository_impl.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/categories/domain/entities/category.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/categories/domain/entities/mappers/category_mappers.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/categories/domain/repositories/categories_repository.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/categories/domain/use_cases/store_categories_get_filtered_use_case.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/categories/presentation/categories_binding.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/categories/presentation/categories_controller.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/categories/presentation/categories_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/categories/presentation/ui/categories_ui_event.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/categories/presentation/ui/categories_ui_state.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/categories/presentation/widgets/category_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/core/utils/app_routing_utils.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/login/routing/login_routing.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/register/routing/register_routing.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/home/presentation/routing/home_rouing.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/home/presentation/ui/home_ui_event.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/home/presentation/ui/home_ui_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/home/presentation/widgets/views/home_grid_view.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/profile/presentation/routing/splash_routing.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/app/features/splash/presentation/routing/splash_routing.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app/core/translations/app_translations.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/core/translations/app_translations.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app/core/translations/from/en_us_translations.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/core/translations/from/en_gb_translations.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app/core/values/constants/app_urls.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/core/values/constants/app_urls.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/features/auth/presentation/login/login_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/login/login_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/features/auth/presentation/login/login_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/login/login_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/features/auth/presentation/login/ui/login_ui_event.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/login/ui/login_ui_event.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/features/auth/presentation/register/register_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/features/auth/presentation/register/register_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/features/categories/presentation/widgets/category_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/features/categories/presentation/widgets/category_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/features/home/presentation/home_binding.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/features/home/presentation/home_binding.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/features/home/presentation/home_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/features/home/presentation/home_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/features/home/presentation/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/features/home/presentation/home_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/features/profile/presentation/profile_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/features/profile/presentation/profile_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/features/splash/presentation/splash_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/features/splash/presentation/splash_controller.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,22 +76,22 @@
     <option name="autoscrollFromSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
-    <property name="cidr.known.project.marker" value="true" />
-    <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/app/features" />
-    <property name="show.migrate.to.gradle.popup" value="false" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "D:/Rouni/foods_rouni/lib/app/features",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Rouni\foods_rouni\lib\app\features" />
+      <recent name="D:\Rouni\foods_rouni\lib\app\features\profile\presentation" />
+      <recent name="D:\Rouni\foods_rouni\lib\app\features\auth\presentation\register" />
       <recent name="D:\Rouni\foods_rouni\lib\app\features\auth\presentation" />
       <recent name="D:\Rouni\foods_rouni\lib\app\features\auth" />
-      <recent name="D:\Rouni\foods_rouni\lib\app\features\auth\presentation\login" />
-      <recent name="D:\Rouni\foods_rouni\lib\app\features\auth\domain\use_cases" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Rouni\foods_rouni\lib\app\features\categories\data\models\remote" />
@@ -178,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694885984508</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="01- Finish categories feature as data and domain.">
+      <created>1694888426817</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1694888426817</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -189,7 +197,8 @@
     <MESSAGE value="01- Finish login feature." />
     <MESSAGE value="01- Finish login feature.main" />
     <MESSAGE value="01- Ignore AppSecrets.&#10;02- Move base url to app secrets." />
-    <option name="LAST_COMMIT_MESSAGE" value="01- Ignore AppSecrets.&#10;02- Move base url to app secrets." />
+    <MESSAGE value="01- Finish categories feature as data and domain." />
+    <option name="LAST_COMMIT_MESSAGE" value="01- Finish categories feature as data and domain." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

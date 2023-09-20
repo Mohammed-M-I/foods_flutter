@@ -28,8 +28,9 @@ class CategoryWidget extends StatelessWidget {
       },
       child: Container(
         height: AppDimensions.height200,
-        padding: const EdgeInsets.symmetric(
-          horizontal: AppDimensions.zero,
+        padding: const EdgeInsetsDirectional.only(
+          start: AppDimensions.zero,
+          end: AppDimensions.zero,
         ),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(
@@ -46,9 +47,9 @@ class CategoryWidget extends StatelessWidget {
               const AppOverlayWidget(),
 
               // Name
-              Positioned(
-                left: AppDimensions.paddingOrMargin16,
-                right: AppDimensions.paddingOrMargin16,
+              PositionedDirectional(
+                start: AppDimensions.paddingOrMargin16,
+                end: AppDimensions.paddingOrMargin16,
                 bottom: AppDimensions.paddingOrMargin16,
                 child: Text(
                   category.name,
