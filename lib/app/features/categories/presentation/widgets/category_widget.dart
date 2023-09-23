@@ -55,7 +55,7 @@ class CategoryWidget extends StatelessWidget {
                   category.name,
                   style: const TextStyle(
                     color: AppColors.white01,
-                    fontSize: AppDimensions.fontSize16,
+                    fontSize: AppDimensions.fontSize12,
                   ),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,

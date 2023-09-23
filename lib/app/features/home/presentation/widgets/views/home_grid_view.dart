@@ -15,7 +15,7 @@ class HomeGridView extends GetView<HomeController> {
 
   @override
   Widget build(BuildContext context) {
-    const itemWidth = 150;
+    const itemWidth = 100;
     int screenWidth = Get.width.toInt();
     int count = screenWidth ~/ itemWidth;
 

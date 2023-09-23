@@ -7,26 +7,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8973da9c-8cb7-4d42-846c-b060e97643d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/app/features/categories/data/datasources/categories_local_datasource.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/categories/data/datasources/categories_remote_datasource.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/categories/data/models/local/category_entity.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/categories/data/models/remote/category_dto.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/categories/data/repositories/categories_repository_impl.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/categories/domain/entities/category.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/categories/domain/entities/mappers/category_mappers.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/categories/domain/repositories/categories_repository.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/categories/domain/use_cases/store_categories_get_filtered_use_case.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/categories/presentation/categories_binding.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/categories/presentation/categories_controller.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/categories/presentation/categories_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/categories/presentation/ui/categories_ui_event.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/categories/presentation/ui/categories_ui_state.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app/features/categories/presentation/widgets/category_widget.dart" afterDir="false" />
+    <list default="true" id="8973da9c-8cb7-4d42-846c-b060e97643d9" name="Changes" comment="01- Ignore AppSecrets.&#10;02- Move base url to app secrets.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app/core/translations/app_translations.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/core/translations/app_translations.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app/core/translations/from/en_us_translations.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/core/translations/from/en_gb_translations.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app/core/values/constants/app_urls.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/core/values/constants/app_urls.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/core/values/app_dimensions.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/core/values/app_dimensions.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/features/categories/presentation/widgets/category_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/features/categories/presentation/widgets/category_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/features/home/presentation/widgets/views/home_grid_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/features/home/presentation/widgets/views/home_grid_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/features/products/presentation/widgets/product_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/features/products/presentation/widgets/product_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/routes/app_pages.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/routes/app_pages.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

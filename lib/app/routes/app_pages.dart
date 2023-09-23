@@ -8,6 +8,8 @@ import '../features/home/presentation/home_binding.dart';
 import '../features/main/presentation/main_binding.dart';
 import '../features/main/presentation/main_page.dart';
 import '../features/orders/presentation/orders_binding.dart';
+import '../features/products/presentation/products_binding.dart';
+import '../features/products/presentation/products_page.dart';
 import '../features/profile/presentation/profile_binding.dart';
 import '../features/splash/presentation/splash_binding.dart';
 import '../features/splash/presentation/splash_page.dart';
@@ -51,12 +53,12 @@ abstract class AppPages {
       transition: Transition.fadeIn,
     ),
 
-    // // Products
-    // GetPage(
-    //   name: AppRoutes.products,
-    //   page: () => const ProductsPage(),
-    //   binding: ProductsBinding(),
-    //   transition: Transition.fadeIn,
-    // ),
+    // Products
+    GetPage(
+      name: AppRoutes.products,
+      page: () => const ProductsPage(),
+      binding: ProductsBinding(),
+      transition: Transition.fadeIn,
+    ),
   ];
 }

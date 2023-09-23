@@ -27,7 +27,7 @@ class ProductWidget extends StatelessWidget {
         onTap(product);
       },
       child: SizedBox(
-        height: AppDimensions.height200,
+        height: AppDimensions.height150,
         child: ClipRRect(
           borderRadius: BorderRadius.circular(
             AppDimensions.radius10,
@@ -59,7 +59,7 @@ class ProductWidget extends StatelessWidget {
                         product.name,
                         style: const TextStyle(
                           color: AppColors.white01,
-                          fontSize: AppDimensions.fontSize28,
+                          fontSize: AppDimensions.fontSize12,
                         ),
                         maxLines: 1,
                       ),
@@ -72,7 +72,7 @@ class ProductWidget extends StatelessWidget {
                               product.storeName,
                               style: const TextStyle(
                                 color: AppColors.white01,
-                                fontSize: AppDimensions.fontSize16,
+                                fontSize: AppDimensions.fontSize12,
                               ),
                               maxLines: 1,
                             ),
@@ -83,7 +83,7 @@ class ProductWidget extends StatelessWidget {
                             product.price.toString(),
                             style: const TextStyle(
                               color: AppColors.white01,
-                              fontSize: AppDimensions.fontSize16,
+                              fontSize: AppDimensions.fontSize12,
                             ),
                             maxLines: 1,
                           ),
