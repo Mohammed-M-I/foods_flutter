@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foods_rouni/app/features/auth/presentation/login/routing/login_routing.dart';
 import 'package:get/get.dart';
 
 import '../../../../core/values/export/export_values.dart';
@@ -47,9 +48,7 @@ class LoginPage extends GetView<LoginController> {
                 // To register
                 InkWell(
                   onTap: () {
-                    controller.on(
-                      event: LoginUiEvent.toRegister(),
-                    );
+                    LoginRouting.toRegister();
                   },
                   child: Text(
                     AppStrings.iDoNotHaveAnAccount.tr,

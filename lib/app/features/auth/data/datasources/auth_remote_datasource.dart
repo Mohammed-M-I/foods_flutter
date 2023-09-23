@@ -2,7 +2,7 @@ import 'package:foods_rouni/app/features/auth/data/models/remote/request/registe
 
 import '../../../../core/error/export_error.dart';
 import '../../../../core/network/api_provider.dart';
-import '../../../../core/network/models/network_response.dart';
+import '../../../../core/network/models/network_response_dto.dart';
 import '../../../../core/values/export/export_values.dart';
 import '../models/remote/request/login_request_dto.dart';
 import '../models/remote/response/login_response_dto.dart';
@@ -29,7 +29,7 @@ class AuthRemoteDatasourceImpl implements AuthRemoteDatasource {
       url: AppUrls.login(),
       data: data.toJson(),
       onSuccess: (dynamic data) {
-        final networkResponse = NetworkResponse.fromJson<LoginResponseDto>(
+        final networkResponse = NetworkResponseDto.fromJson<LoginResponseDto>(
           data,
           LoginResponseDto.fromJson,
         );
@@ -61,7 +61,7 @@ class AuthRemoteDatasourceImpl implements AuthRemoteDatasource {
       url: AppUrls.register(),
       data: data.toJson(),
       onSuccess: (dynamic data) {
-        final networkResponse = NetworkResponse.fromJson(
+        final networkResponse = NetworkResponseDto.fromJson(
           data,
           null,
         );

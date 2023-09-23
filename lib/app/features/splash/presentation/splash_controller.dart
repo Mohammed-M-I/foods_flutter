@@ -1,3 +1,4 @@
+import 'package:foods_rouni/app/features/splash/presentation/routing/splash_routing.dart';
 import 'package:get/get.dart';
 
 import '../../../core/storage/app_storage.dart';
@@ -98,8 +99,8 @@ class SplashController extends GetxController {
           false,
         );
 
-        Get.offNamed(
-          isLoggedIn ? AppRoutes.main : AppRoutes.login,
+        SplashRouting.toLoginOrMain(
+          isLoggedIn: isLoggedIn,
         );
       },
     );

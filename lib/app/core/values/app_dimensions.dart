@@ -4,6 +4,7 @@ abstract class AppDimensions {
   static const double borderWidth03 = 3.0;
 
   static const double _fontSizeScale = 1.5;
+  static const double fontSize10 = 10.0 * _fontSizeScale;
   static const double fontSize12 = 12.0 * _fontSizeScale;
   static const double fontSize14 = 14.0 * _fontSizeScale;
   static const double fontSize16 = 16.0 * _fontSizeScale;
@@ -37,6 +38,7 @@ abstract class AppDimensions {
   static const double height40 = 40.0;
   static const double height50 = 50.0;
   static const double height60 = 60.0;
+  static const double height150 = 150.0;
   static const double height200 = 200.0;
 
   static const double width15 = 15.0;

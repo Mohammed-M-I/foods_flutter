@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:foods_rouni/app/features/home/presentation/home_controller.dart';
 import 'package:get/get.dart';
 
 import '../../../global_widgets/app_no_data_found_widget.dart';
 import '../../../global_widgets/app_progress_widget.dart';
-import 'widgets/views/home_grid_view.dart';
+import 'products_controller.dart';
+import 'widgets/views/products_list_view.dart';
 
-class HomePage extends GetView<HomeController> {
-  const HomePage({
+class ProductsPage extends GetView<ProductsController> {
+  const ProductsPage({
     Key? key,
   }) : super(key: key);
 
@@ -20,16 +20,16 @@ class HomePage extends GetView<HomeController> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               // List or no data found
-              controller.state().categories.isEmpty
+              controller.state().products.isEmpty
                   ? controller.state().isLoading
                       ? const SizedBox.shrink()
                       : const AppNoDataFoundWidget()
                   : const Expanded(
-                      child: HomeGridView(),
+                      child: ProductsListView(),
                     ),
 
-              // Loading
-              if (controller.state().isLoading && controller.state().categories.isEmpty)
+              // Loading at first time
+              if (controller.state().isLoading && controller.state().products.isEmpty)
                 const Center(
                   child: AppProgressWidget(),
                 ),

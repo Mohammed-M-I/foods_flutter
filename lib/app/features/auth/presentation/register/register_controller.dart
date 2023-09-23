@@ -1,3 +1,4 @@
+import 'package:foods_rouni/app/features/auth/presentation/register/routing/register_routing.dart';
 import 'package:get/get.dart';
 
 import '../../../../core/error/failures.dart';
@@ -215,9 +216,7 @@ class RegisterController extends GetxController {
           loginData: data,
         );
 
-        Get.offAllNamed(
-          AppRoutes.main,
-        );
+        RegisterRouting.toMain();
       },
     );
   }
