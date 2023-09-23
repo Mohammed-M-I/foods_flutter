@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foods_rouni/app/features/profile/presentation/routing/splash_routing.dart';
 import 'package:get/get.dart';
 
 import '../../../core/storage/app_storage.dart';
@@ -21,9 +22,7 @@ class ProfilePage extends GetView<ProfileController> {
             onPressed: () {
               AppStorage.removeAll();
 
-              Get.offNamed(
-                AppRoutes.splash,
-              );
+              ProfileRouting.toSplash();
             },
             child: Text(
               'Logout',

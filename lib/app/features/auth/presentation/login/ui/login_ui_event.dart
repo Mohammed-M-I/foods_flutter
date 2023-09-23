@@ -3,8 +3,6 @@ abstract class LoginUiEvent {
     required String phoneNumber,
     required String password,
   }) = LoginEvent;
-
-  factory LoginUiEvent.toRegister() = ToRegisterEvent;
 }
 
 class LoginEvent implements LoginUiEvent {
@@ -15,8 +13,4 @@ class LoginEvent implements LoginUiEvent {
     required this.phoneNumber,
     required this.password,
   });
-}
-
-class ToRegisterEvent implements LoginUiEvent {
-  ToRegisterEvent();
 }

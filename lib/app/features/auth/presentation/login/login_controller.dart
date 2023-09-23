@@ -8,6 +8,7 @@ import '../../../../routes/app_pages.dart';
 import '../../core/utils/auth_user_utils.dart';
 import '../../domain/entities/login_data.dart';
 import '../../domain/use_cases/login_use_case.dart';
+import 'routing/login_routing.dart';
 import 'ui/login_ui_event.dart';
 import 'ui/login_ui_state.dart';
 
@@ -71,14 +72,6 @@ class LoginController extends GetxController {
   }) {
     if (event is LoginEvent) {
       _login(
-        event: event,
-      );
-
-      return;
-    }
-
-    if (event is ToRegisterEvent) {
-      _toRegister(
         event: event,
       );
 
@@ -158,18 +151,8 @@ class LoginController extends GetxController {
           loginData: data,
         );
 
-        Get.offNamed(
-          AppRoutes.main,
-        );
+        LoginRouting.toMain();
       },
-    );
-  }
-
-  void _toRegister({
-    required ToRegisterEvent event,
-  }) async {
-    Get.toNamed(
-      AppRoutes.register,
     );
   }
 
