@@ -1,6 +1,7 @@
-import '../network/models/network_response.dart';
+import '../network/models/network_response_dto.dart';
 
 import '../error/failures.dart';
+import '../network/models/paged_list.dart';
 
 abstract class DataState<T> {
   final T data;

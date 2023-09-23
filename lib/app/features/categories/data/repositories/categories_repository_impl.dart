@@ -6,7 +6,6 @@ import '../../../../core/error/failures.dart';
 import '../../../../core/network/utils/app_network_utils.dart';
 import '../../../categories/domain/entities/mappers/category_mappers.dart';
 import '../../domain/entities/category.dart';
-import '../../domain/entities/mappers/category_mappers.dart';
 import '../../domain/repositories/categories_repository.dart';
 import '../datasources/categories_local_datasource.dart';
 import '../datasources/categories_remote_datasource.dart';
@@ -39,12 +38,12 @@ class CategoriesRepositoryImpl implements CategoriesRepository {
 
         // Store locally without paging
         await _localDatasource.storeAll(
-          dataList: result!.data!.toEntityList,
+          dataList: result!.dataDto!.toEntityList,
         );
 
         return Right(
           DataState.done(
-            data: result!.data!.toDomainList,
+            data: result!.dataDto!.toDomainList,
           ),
         );
       }

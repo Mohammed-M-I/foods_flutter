@@ -1,29 +1,30 @@
 
-import '../network/models/network_response.dart';
+import '../network/models/network_response_dto.dart';
 
 import '../error/failures.dart';
+import '../network/models/paged_list_dto.dart';
 
 abstract class RemoteDataState<T> {
-  final T data;
-  final PagedList? pagedList;
+  final T dataDto;
+  final PagedListDto? pagedListDto;
 
   const RemoteDataState._({
-    required this.data,
-    this.pagedList,
+    required this.dataDto,
+    this.pagedListDto,
   });
 
   factory RemoteDataState.done({
-    required T data,
-    PagedList? pagedList,
+    required T dataDto,
+    PagedListDto? pagedListDto,
   }) = RemoteDoneState<T>;
 }
 
 class RemoteDoneState<T> extends RemoteDataState<T> {
   const RemoteDoneState({
-    required T data,
-    PagedList? pagedList,
+    required T dataDto,
+    PagedListDto? pagedListDto,
   }) : super._(
-    data: data,
-      pagedList: pagedList,
+    dataDto: dataDto,
+      pagedListDto: pagedListDto,
   );
 }
